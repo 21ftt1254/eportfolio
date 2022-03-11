@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">  
+
+     .sibling-element {
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+     .parent-element {
+       /* position: relative;*/
+        height: 800px;
+        padding:   10px;
+        background-color: #81adc8;
+
+    }
+    .main-element {
+        /*position: static;*/ /*it didnt change / default*/
+
+        /*position: relative;*/ /* will not remove from the document flow*/
+        
+        /*position: absolute;*/ 
+
+        /* kalau nada position arah parent di atas2, it will start at from html page it self */
+
+        /* kalau be position (selain dripada static) di parent, it will start inside the box*/
+
+        position: fixed; /*not affecting by scrolling, it permanent keep at the position VS 'absolute' it will be affected (1. ada parent 2. )
+
+        left: 0;
+        bottom:0px;
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    </style>
+
+</head>
+<body>
+ <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+</div>
+</body>
+</html>
