@@ -19,12 +19,29 @@ align-content
 		
 		div{display: flex; border: 1px solid; 
 			width: 500px;height:400px;
+			justify-content: space-between; /* this for the space and jarak the box*/
+
+			align-items: center; /*this center the box*/
+
+			/*align-items: flex-end; ani for box atu di bawah sekali.*/
+
+			/*flex-direction: column;*/
+			/*flex-direction: row-reverse;*/
+/*
+			flex wrap kira if contain nya damit.
+
+			align content will be use if the line box are two (meaning flex-wrap: wrap;. 
+
+				if 1 line saja so ia pakai align center saja.*/
 		}
 
 		p{width:200px;height: 100px; 
 			background-color: cyan;
 			border: 1px solid;
 			box-sizing: border-box;}
+
+
+			p:nth-child(odd){align-self: flex-end;} /*ani design box atas bawah and positionnya di bawah*/
 	</style>
 
 </head>
