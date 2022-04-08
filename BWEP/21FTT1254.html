@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ELSE IF</title>
+
+</head>
+<script type="text/javascript">
+	
+	var Name = prompt("Enter name: ");
+	var Time = Number(prompt("Enter time in 24hr (whole number only):"));
+	var FirstNum = Number(prompt("Enter first number:"));
+	var SecondNum = Number(prompt("Enter second number: "));
+	var Choice = prompt("Enter choice. 1. Add 2. Multiply");
+
+//	Time
+
+	if (Time <=12){
+		Greet = " Good morning " + Name
+		Note = " Enjoy your morning";
+
+	}
+	else if (Time <24){
+		Greet = "Good Day " + Name
+		Note = " Enjoy the rest of your days";
+	}
+	else{ Greet = " Sorry" + Name + "." + "I need a valid time."}
+
+
+//choice
+
+	if (Choice == 1){
+		Decide = "You decided to Add them"
+		Result = FirstNum + SecondNum
+	}
+	else{
+		Decide = "You decided to Multiply them"
+		Result = FirstNum * SecondNum
+	}
+
+
+</script>
+<body>
+
+<script type="text/javascript">
+
+	document.write(Greet + "<br>" + "You entered " + FirstNum + " & " + SecondNum);
+	document.write("<br>" + Decide);
+	document.write("<br>" + "The answer is " + Result);
+	document.write("<br>" + Note);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
